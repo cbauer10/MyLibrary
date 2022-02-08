@@ -1,0 +1,30 @@
+PODS:
+  - AppCenter (4.4.1):
+    - AppCenter/Analytics (= 4.4.1)
+    - AppCenter/Crashes (= 4.4.1)
+  - AppCenter/Analytics (4.4.1):
+    - AppCenter/Core
+  - AppCenter/Core (4.4.1)
+  - AppCenter/Crashes (4.4.1):
+    - AppCenter/Core
+  - MyLibrary (0.1.0):
+    - AppCenter (~> 4.4)
+
+DEPENDENCIES:
+  - MyLibrary (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AppCenter
+
+EXTERNAL SOURCES:
+  MyLibrary:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AppCenter: b0b6f1190215b5f983c42934db718f3b46fff3c0
+  MyLibrary: a9f8f7a12174ad04fd9d51f1f62e4fa3ca78f8d4
+
+PODFILE CHECKSUM: e0c86a484f37634200c0eb3d07604353d1e1de7f
+
+COCOAPODS: 1.11.2

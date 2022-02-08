@@ -1,5 +1,8 @@
 import XCTest
 import MyLibrary
+import AppCenter
+import AppCenterAnalytics
+import AppCenterCrashes
 
 class Tests: XCTestCase {
     
@@ -14,15 +17,6 @@ class Tests: XCTestCase {
     }
     
     func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+        AppCenter.start(withAppSecret: "xyz", services: [Analytics.self, Crashes.self])
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure() {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }

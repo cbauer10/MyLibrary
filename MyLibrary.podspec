@@ -28,6 +28,10 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/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/MyLibrary.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
+  s.swift_version           = '5.0'
+  s.requires_arc            = true
+  s.static_framework        = true
+
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'MyLibrary/Classes/**/*'
@@ -36,7 +40,5 @@ TODO: Add long description of the pod here.
   #   'MyLibrary' => ['MyLibrary/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'AppCenter',     '~> 4.4'
 end
